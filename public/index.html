@@ -1,241 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetPay</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Green Square</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+  </head>
+  <body>
+    <div class="overflow-hidden bg__black position-relative">
+      <img src="./assets/images/Group 20804.png" class="path__1" alt="" />
+      <div class="position-relative z-2">
+        <nav
+          class="navbar navbar-expand-lg wrapper__navbar position-relative z-2"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <div class="container position-relative z-2">
+            <div class="line__buttom"></div>
+            <a class="navbar-brand" href="#">
+              <img src="./assets/images/Logo (2).png" alt="" />
+            </a>
 
-  <link rel="stylesheet" href="GreenSquare/plugins/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="GreenSquare/fonts/icon-font/css/style.css">
-  <link rel="stylesheet" href="GreenSquare/fonts/typography-font/typo.css">
-  <link rel="stylesheet" href="GreenSquare/fonts/fontawesome-5/css/all.css">
-  <!-- Plugin'stylesheets  -->
-  <link rel="stylesheet" href="GreenSquare/plugins/aos/aos.min.css">
-  <link rel="stylesheet" href="GreenSquare/plugins/fancybox/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="GreenSquare/plugins/nice-select/nice-select.min.css">
-  <link rel="stylesheet" href="GreenSquare/plugins/slick/slick.min.css">
-  <!-- Vendor stylesheets  -->
-  <link rel="stylesheet" href="GreenSquare/css/settings.css">
-  <link rel="stylesheet" href="GreenSquare/css/main.css">
-  <!-- Custom stylesheet -->
-  <link rel="stylesheet" href="GreenSquare/css/custom.css">
-</head>
-
-<body>
-  <div id="loading">
-    <div class="load-circle"><span class="one"></span></div>
-  </div>
-  <div class="site-wrapper overflow-hidden ">
-    <!-- Header Area -->
-    <header class="site-header sticky-header">
-      <div class="container-fluid pr-lg--30 pl-lg--30">
-        <nav class="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
-          <!-- Brand Logo-->
-         
-          <div class="collapse navbar-collapse" id="mobile-menu">
-		  
-        
-            <button class="btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
-              <i class="icon icon-e-remove"></i>
-            </button>
           </div>
-		   <!-- 红色开始按钮 <div class="header-btns ml-auto ml-lg-0 mr--15 mr-lg--0"><a class="btn btn--primary btn-header hvr-bounce-to-left" href="#">Get Started</a></div> -->
-          
-          <button class="navbar-toggler btn-close-off-canvas" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="icon icon-simple-remove icon-close"></i>
-            <i class="icon icon-menu-34 icon-burger"></i>
-          </button>
         </nav>
-      </div>
-    </header>
-    <!-- Hero Area -->
-    <div class="omga-07__hero-area bg-black-squeeze">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 col-xl-4 col-md-5 col-sm-6 mb--30 mb-md--0" data-aos="fade-right" data-aos-duration="500" data-aos-delay="1600" data-aos-once="true">
-            <div class="omga-07__hero-image">
-              <img src="./GreenSquare/image/png/l7-hero-image.png" alt="">
-            </div>
-          </div>
-          <div class="col-lg-7 col-xl-6 col-md-7 offset-xl-1" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
-            <div class="omga-07__hero-content ">
-              <h1 class="title">Welcome to  <br class="d-none d-lg-block">Green Square Games!</h1>
-                <p>We are a company devoted to creating casual mobile games. Our primary aim is to deliver enjoyable and stimulating gaming encounters to players.</p>
-                
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Review Area -->
-    <div class="omga-07__review-area bg-indigo">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mb--30">
-            <div class="omga-07__single-review">
-              <div class="review-star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p>At Green Square Games, our philosophy centers around the idea that games ought to be uncomplicated, delightful, and effortlessly accessible. Every game we craft is meticulously planned with the objective of bringing happiness to our players..</p>
-              <span class="user-name">Founder</span>
-            </div>
-          </div>
-          <div class="col-md-6 mb--30">
-            <div class="omga-07__single-review">
-              <div class="review-star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p>We will persist in innovating, advancing, and launching fresh titles, enabling players to relish our painstakingly crafted and top-tier games.</p>
-              <span class="user-name">Partner</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Content Area -->
-    <div class="omga-07__content-section">
-      <div class="container">
-        <div class="row ">
-          <div class="col-lg-6 mb--30 mb--md-0 order-lg-2">
-            <div class="omga-07__content-image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200" data-aos-once="true">
-              <img src="./GreenSquare/image/png/l7-mobile.png" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-9 order-lg-1">
-            <div class="omga-07__content-text">
-              <h2 class="title">Classic <br class="d-none d-sm-block d-md-none d-xl-block"> Sudoku Puzzle</h2>
-                <p>Sudoku stands as an engaging and captivating puzzle game, widely renowned on Google Play. It serves as an excellent tool to train your brain and enhance your logical reasoning skills.</p>
-                <div class="content-widget">
-                  <div class="single-widget">
-                    <h3 class="w-title">Our features:</h3>
-                    <p>This application presents a diverse array of Sudoku puzzles featuring different degrees of complexity. It boasts a user-friendly interface and offers valuable functionalities such as hints and pencil marks.</p>
-                  </div>
-                  <div class="single-widget">
-                    <h3 class="w-title">FREE Download.</h3>
-                    <p>We've meticulously fashioned this game with adoration for Sudoku enthusiasts. If it resonates with you, kindly proceed to download and give it a try at your earliest convenience. Uphold the practice of engaging with Sudoku daily, thereby cultivating a distinct sensation like that of a bolstered mind.</p>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Content Area 2 -->
-    <div class="omga-07__content-section-2">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb--30 mb--md-0">
-            <div class="omga-07__content-image-2 omga-07__content-image-group">
-              <div class="single-image">
-                <img src="./GreenSquare/image/jpeg/l7-content2-image-1.jpg" alt="" data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
-                <img src="./GreenSquare/image/jpeg/l7-content2-image-2.jpg" alt="" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="600" data-aos-once="true">
-              </div>
-              <div class="single-image">
-                <img src="./GreenSquare/image/jpeg/l7-content2-image-3.jpg" alt="" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1000" data-aos-once="true">
-                <img src="./GreenSquare/image/jpeg/l7-content2-image-4.jpg" alt="" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1500" data-aos-once="true">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-9 ">
-            <div class="omga-07__content-text">
-              <h2 class="title">Fun ctivities & <br class="d-none d-sm-block d-md-none d-xl-block">competitions</h2>
-                <p>Functioning as a rendezvous for aficionados of puzzle games, our dedication lies in furnishing an unparalleled platform for demonstrating prowess, pushing one's limits, and engaging with fellow enthusiasts of puzzle gaming.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-	
-    <!-- Content Area 3-->
-    <div class="omga-07__content-section-3">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb--30 mb--md-0 order-lg-2">
-            <div class="comga-07__ontent-image-3" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200" data-aos-once="true">
-              <img src="./GreenSquare/image/png/l7-mobile-2.png" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-9 order-lg-1">
-            <div class="omga-07__content-text">
-              <h2 class="title">Block Blast  <br class="d-none d-sm-block d-md-none d-xl-block">Puzzle Fusion</h2>
-                <p>""Block Blast Puzzle Fusion" caters ideally to puzzle game aficionados spanning various age groups. Its uncomplicated yet captivating gameplay mechanics facilitate effortless initiation and participation. Meanwhile, the escalating intricacy ensures an enduring state of engagement and amusement.</p>
-                <div class="omga-07__content-btn pt--30">
-                  <a href="#cta" style="border:1px solid #32E02F;background:#37CF3C" class="btn--primary goto   ">Download</a>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Video Area -->
-    
-    <!-- Cta Area -->
-    <div class="omga-07__cta-section" id="cta">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="omga-07__cta-content ">
-              <h2>Get the game for FREE!</h2>
-              <p>The team at Green Square Games consists of passionate and creative developers. <br class="d-none d-md-block">  We strive to create unique and engaging games that blend technology with art. </p>
-                <div class="cta-btns">
-               
-				  <!--<a href="#" class="apple-store">
-                    <img src="image/png/app-store.png" alt="">
-                  </a> -->
-                  <a href="" class="google-play">
-                    <img src="GreenSquare/image/png/google-play.png" alt="">
-                  </a>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer section -->
-    <div class="footer-section footer-4 bg-black-squeeze border-whisper-top">
-      <div class="container">
-        <div class="footer-top">
-          <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-6 mb--30 text-lg-left text-center">
-              <div class=" d-lg-flex">
-                <div class="footer-logo mr-lg-4 mb-4 mb-lg-0">
-                 
-                </div>
-               
-              </div>
-            </div>
-            <div class="col-lg-6 text-center mb--30 ml-auto">
-              <ul class="footer-list list-inline">
-                <li><a href="GreenSquare/PrivacyPolicy.html">Privacy Policy</a></li>
-                <li><a href="GreenSquare/TermsOfUse.html">Terms and Conditions</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Vendor Scripts -->
-  <script src="GreenSquare/plugins/jquery/jquery.min.js"></script>
-  <script src="GreenSquare/plugins/jquery/jquery-migrate.min.js"></script>
-  <script src="GreenSquare/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Plugin's Scripts -->
-  <script src="GreenSquare/plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="GreenSquare/plugins/nice-select/jquery.nice-select.min.js"></script>
-  <script src="GreenSquare/plugins/aos/aos.min.js"></script>
-  <script src="GreenSquare/plugins/slick/slick.min.js"></script>
-  <!-- Activation Script -->
-  <script src="GreenSquare/js/custom.js"></script>
-</body>
 
+        <section class="position-relative z-2 pb-0">
+          <img
+            src="./assets/images/Group 18869.png"
+            class="path__1 d-none d-lg-block"
+            alt=""
+          />
+          <div class="container position-relative z-2">
+            <div class="row">
+              <div class="col-lg-6 text-center text-lg-left">
+                  <h1 class="font__size--64 text__60-1024 text__60-sm bold mb-0">
+                      Where Casual Gaming Meets Endless Fun!
+                  </h1>
+                  <p class="normal font__size--18 text__18-1024 lh-2 my-4">
+                      Green Grass Block Company is an innovative
+                      <br class="d-none d-sm-block" />
+                      enterprise focused on leisure
+                      <br class="d-none d-sm-block" />
+                      game development.
+                  </p>
+
+                <div
+                  class="d-flex justify-content-center justify-content-lg-start align-items-center"
+                >
+                  <a
+                    href="#!"
+                    class="btn__original btn btn__purple shadow font__size--16 text__16-1024 semi-bold color__white"
+                    >Google Play</a
+                  >
+                  <a
+                    href="#!"
+                    class="btn__original btn btn__outlined--white shadow no__opacity color__white font__size--16 text__16-1024 semi-bold color__white h__black ml-3"
+                    >FREE Download</a
+                  >
+                </div>
+              </div>
+              <div class="col-lg-6 d-none d-lg-block">
+                <img src="./assets/images/Group 18887.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section>
+        <div class="container position-relative z-2">
+          <div class="row">
+            <div class="col-lg-3 mb-4 mb-lg-0 text-center text-lg-left">
+              <h5 class="bold font__size--24 text__24-1024 color__white">
+                We Featured on popular Partners like
+              </h5>
+            </div>
+            <div class="col-lg">
+              <div
+                class="wrapper__brand d-flex flex-wrap flex-lg-nowrap justify-content-center align-items-center"
+              >
+                <img src="./assets/images/Image Logo.png" alt="" />
+                <img src="./assets/images/Image Logo (1).png" alt="" />
+                <img src="./assets/images/Image Logo (2).png" alt="" />
+                <img src="./assets/images/Image Logo (3).png" alt="" />
+                <img src="./assets/images/Image Logo (4).png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="position-relative">
+        <img src="./assets/images/Ellipse 3.png" class="path__4" alt="" />
+        <div class="container position-relative z-2">
+          <div class="wrapper__work position-relative bg__purple-2">
+            <img
+              src="./assets/images/Arrow.png"
+              class="d-none d-md-block path__2"
+              alt=""
+            />
+            <img
+              src="./assets/images/Arrow (1).png"
+              class="d-none d-md-block path__3"
+              alt=""
+            />
+            <div class="position-relative z-2">
+              <div class="text-center mb-5">
+                  <h3 class="bold font__size--40 text__40-1024 text__40-mm color__white">
+                      Introduction
+                  </h3>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                  <h5
+                    class="semi-bold font__size--24 text__24-1024 color__white mb-3"
+                  >
+                    01
+                  </h5>
+                  <h4 class="bold font__size--24 text__24-1024 color__white">
+                      Creative Design
+                  </h4>
+                  <p class="medium font__size--16 text__16-1024 opacity__5">
+                      Our games offer fresh and engaging challenges that captivate players of all skill levels.
+                  </p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0 mt__ms-0 mt__4">
+                  <h5
+                    class="semi-bold font__size--24 text__24-1024 color__white mb-3"
+                  >
+                    02
+                  </h5>
+                  <h4 class="bold font__size--24 text__24-1024 color__white">
+                      Visual Delight
+                  </h4>
+                  <p class="medium font__size--16 text__16-1024 opacity__5">
+                      Immerse yourself in stunning graphics and animations that enhance your gaming experience.
+                  </p>
+                </div>
+                <div class="col-md-4 mt__ms-0 mt__8">
+                  <h5
+                    class="semi-bold font__size--24 text__24-1024 color__white mb-3"
+                  >
+                    03
+                  </h5>
+                  <h4 class="bold font__size--24 text__24-1024 color__white">
+                      Social Fun
+                  </h4>
+                  <p class="medium font__size--16 text__16-1024 opacity__5">
+                      Connect with friends, share achievements, and compete with a global gaming community.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="position-relative">
+        <div class="container position-relative z-2">
+          <div class="row">
+            <div class="col-md-6 d-none d-lg-block my-auto">
+              <img src="./assets/images/Group 18895.png" alt="" />
+            </div>
+            <div class="col-lg-6 text-center text-lg-left my-auto">
+                <h1 class="font__size--52 text__50-1024 text__50-sm bold mb-0">
+                    Free Enjoyment
+                </h1>
+                <p class="normal font__size--16 text__16-1024 opacity__5 text__18-1024 lh-2 my-4">
+                    Enjoy our games for free, because we believe everyone deserves great entertainment.
+                </p>
+
+              <a
+                href="#!"
+                class="btn btn__purple btn__explore shadow font__size--16 text__16-1024 semi-bold color__white"
+                >Download Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+      <section class="bg__purple-2 mt__8">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 d-none d-lg-block position-relative my-auto">
+              <img
+                src="./assets/images/Group 20805 1.png"
+                class="path__7"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-6 text-center text-lg-left my-auto offset-1">
+              <h2 class="font__size--42 text__40-1024 text__40-mm bold">Download Our Game</h2>
+              <p class="medium font__size--16 text__16-1024 opacity__5 mb-4">
+                  Unlock the Fun
+                  <br class="d-none d-sm-block" />
+                  Download Now and Play Your Way to Adventure!
+                  <br class="d-none d-sm-block" />
+                  Come and download our game now
+              </p>
+              <div class="d-flex justify-content-center justify-content-lg-start align-items-center">
+                <a href="#!">
+                  <img src="./assets/images/Google Play.png" alt="" />
+                </a>
+                <a href="#!" class="ml-3">
+                  <img src="./assets/images/App Store.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-0 position-relative">
+        <img src="./assets/images/Ellipse 4.png" class="path__8" alt="" />
+
+        <div
+          class="text-center position-relative z-2 medium font__size--14 text__14-1024 text__14-1024 py-4"
+        >
+          <span class="color__white opacity__5">Copyright</span>
+          <span class="color__white">GetPay</span>
+          <span class="color__white opacity__5">2022 All Right Reserved</span>
+        </div>
+      </section>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+      // AOS.init();
+    </script>
+  </body>
 </html>

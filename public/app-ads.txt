@@ -232,7 +232,7 @@ smartadserver.com,4383,RESELLER
 smartadserver.com,4071,RESELLER
 smartadserver.com,3797,RESELLER
 pubmatic.com,8676470,RESELLER
-applovin.com, 0dc54d4ae8d2184d5ffabb22142a86fd, DIRECT
+applovin.com, 34375a742899d43ea97e960c1b4a11ba, DIRECT
 loopme.com, 11303, RESELLER, 6c8d5f95897a5a3b
 rubiconproject.com, 16356, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 20744, RESELLER, 0bfd66d529a55807

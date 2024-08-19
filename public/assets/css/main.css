@@ -747,7 +747,7 @@ section {
 }
 
 .bg__purple-2 {
-  background-color: #19113A !important;
+    background-color: #0D404B !important;
 }
 
 .bg__gray-1 {
@@ -1055,7 +1055,7 @@ section {
 }
 
 .color__purple-2 {
-  color: #19113A !important;
+    color: #0D404B !important;
 }
 
 .color__gray-1 {
@@ -2205,7 +2205,7 @@ h5 {
   color: white !important;
 }
 .btn__purple {
-  background-color: #9C7EFB;
+    background-color: #1FAC00;
 }
 .btn__purple.shadow {
   box-shadow: none !important;
@@ -2241,8 +2241,8 @@ h5 {
   color: white !important;
 }
 .btn__purple-2 {
-  color: #ffffff;
-  background-color: #19113A;
+    color: #ffffff;
+    background-color: #0D404B;
 }
 .btn__purple-2.shadow {
   box-shadow: none !important;
@@ -2251,15 +2251,15 @@ h5 {
   box-shadow: 0 15px 30px rgba(25, 17, 58, 0.5) !important;
 }
 .btn__outlined--purple-2 {
-  border: 2px solid #19113A;
-  color: #19113A;
-  opacity: 0.3;
-  background-color: transparent;
-  transition: 0.5s;
+    border: 2px solid #0D404B;
+    color: #0D404B;
+    opacity: 0.3;
+    background-color: transparent;
+    transition: 0.5s;
 }
-.btn__outlined--purple-2.b-1 {
-  border: 1px solid #19113A;
-}
+    .btn__outlined--purple-2.b-1 {
+        border: 1px solid #0D404B;
+    }
 .btn__outlined--purple-2.h__black:hover {
   color: #0E0824 !important;
 }

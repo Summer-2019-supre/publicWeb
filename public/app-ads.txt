@@ -2903,3 +2903,11 @@ yeahmobi.com, 114490, RESELLER
 zmaticoo.com, 114490, RESELLER
 pangleglobal.com, Account ID, DIRECT
 pubmatic.com, 161490, RESELLER, 5d62403b186f2ace
+adingo.jp, 31054, RESELLER
+singularads, 548745, RESELLER
+yieldmo.com, 3591550211052216798, RESELLER, 6a92c77cfc3d2258
+App-stock.com, 558223, Reseller, ed8c126ea5971415
+contextweb.com, 563321, RESELLER, 89ff185a4c4e857c
+smaato.com, 1100057546, DIRECT, 07bcf65f187117b4
+smaato.com, 1100004890, DIRECT, 07bcf65f187117b4
+pubmatic.com, 165329, RESELLER, 5d62403b186f2ace

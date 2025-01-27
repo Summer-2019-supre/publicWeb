@@ -1,4 +1,5 @@
 google.com, pub-9959944482396465, DIRECT, f08c47fec0942fa0
+facebook.com, 6191604724278011, DIRECT, c3e20eee3f780d68
 ironsrc.com,  302845, Direct
 adbility-media.com, 187, RESELLER
 advertising.com, 8693, RESELLER

@@ -1397,3 +1397,46 @@ video.unrulymedia.com, 505354689, RESELLER
 conversantmedia.com, 100791, RESELLER, 03113cd04947736d
 themediagrid.com, NG9STC, DIRECT, 35d5010d7789b49d
 google.com, pub-5614953105249212, DIRECT, f08c47fec0942fa0
+indexexchange.com, 194974, RESELLER, 50b1c356f2c5c8fc
+appnexus.com, 12941, RESELLER, f5ab79cb980f11d1
+appnexus.com, 12752, RESELLER, f5ab79cb980f11d1
+appnexus.com, 12969, RESELLER, f5ab79cb980f11d1
+appnexus.com, 13293, RESELLER, f5ab79cb980f11d1
+toponad.com, 1661f80179644e, DIRECT, 1d49fe424a1a456d
+pubmatic.com, 159382, RESELLER
+rubiconproject.com, 25496, RESELLER, 0bfd66d529a55807
+smaato.com, 1100051000, RESELLER, 07bcf65f187117b4
+sharethrough.com, 26VgE1nN, RESELLER, d53b998a7bd4ecd2
+lijit.com, 443291, RESELLER, fafdf38b16bf6b2b
+zetaglobal.net, 525, RESELLER
+goldbach-germany.de, BalloonLabs, RESELLER
+improvedigital.com, 2505, RESELLER
+sovrn.com, 500520, RESELLER, fafdf38b16bf6b2b
+zetaglobal.com, 815, RESELLER
+ssp.zetaglobal.net, 815, RESELLER
+appnexus.com, 16903, RESELLER, f5ab79cb980f11d1
+ucfunnel.com, par-E2B3A33EAA4286BEF7ADD9AA28A922D2, RESELLER
+aralego.com, par-E2B3A33EAA4286BEF7ADD9AA28A922D2, RESELLER
+adiiix.com, db716a4c, RESELLER
+rubiconproject.com, 25482, RESELLER, 0bfd66d529a55807
+krushmedia.com, AJxF6R192a9M6CaTvK, RESELLER
+mgid.com, 885240, RESELLER, d4c29acad76ce94f
+rubiconproject.com, 26552, RESELLER
+admixer.co.kr, 1289, RESELLER
+appnexus.comappnexus.com, 6849, RESELLER
+zmaticoo.com, 114490, DIRECT
+contextweb.com, 563521, RESELLER, 89ff185a4c4e857c
+rubiconproject.com, 15044, RESELLER, 0bfd66d529a55807
+admanmedia.com, 2248, RESELLER
+improvedigital.com, 2508, RESELLER
+improvedigital.com, 2509, RESELLER
+pubnative.net, 1010067, RESELLER, d641df8625486a7b
+pubnative.net, 1010068, RESELLER, d641df8625486a7b
+pubnative.net, 1010069, RESELLER, d641df8625486a7b
+pubnative.net, 1010070, RESELLER, d641df8625486a7b
+pubnative.net, 1010071, RESELLER, d641df8625486a7b
+pubnative.net, 1010072, RESELLER, d641df8625486a7b
+pubnative.net, 1010073, RESELLER, d641df8625486a7b
+video.unrulymedia.com, 453209019, RESELLER
+connekt.ai, 2852512, RESELLER
+adyoulike.com, e48120b055ac0abcc41c0093bf3fe02e, RESELLER

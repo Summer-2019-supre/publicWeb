@@ -1,195 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
+    <title>Privacy Policy - AbsoluteSecure Limited</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --gray: #95a5a6;
+            --success: #2ecc71;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-        }
-
-        h1, h2, h3 {
             color: #333;
+            background-color: #f8f9fa;
         }
-
-        h1 {
-            font-size: 28px;
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-
-        h2 {
+        
+        /* Header styles */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .logo {
+            background-color: white;
+            color: var(--secondary);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
             font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .last-updated {
+            font-style: italic;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        /* Navigation styles */
+        .quick-nav {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        
+        .quick-nav h2 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .nav-btn {
+            background: var(--light);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            color: var(--dark);
+        }
+        
+        .nav-btn:hover {
+            background: var(--secondary);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        /* Main content styles */
+        .content {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        section {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--light);
+        }
+        
         h3 {
-            font-size: 20px;
+            color: var(--secondary);
+            margin: 1.5rem 0 0.8rem;
         }
-
+        
         p {
-            margin-bottom: 15px;
+            margin-bottom: 1rem;
+            color: #555;
         }
-
+        
         ul {
-            margin-bottom: 15px;
-            padding-left: 20px;
+            margin: 0 0 1rem 1.5rem;
         }
-
-        .section {
-            margin-bottom: 30px;
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-box {
+            background-color: var(--light);
+            border-left: 4px solid var(--secondary);
+            padding: 1.2rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+        }
+        
+        .info-card {
+            background: linear-gradient(to right, #e3f2fd, #bbdefb);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .info-icon {
+            font-size: 2rem;
+            margin-right: 15px;
+            color: var(--secondary);
+        }
+        
+        .games-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .game-tag {
+            background-color: #e1f5fe;
+            color: #0288d1;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 3rem 0 2rem;
+            text-align: center;
+        }
+        
+        .contact-section {
+            max-width: 500px;
+            margin: 0 auto 2rem;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 1.5rem;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.7rem;
+            }
+            
+            .content {
+                padding: 1rem;
+            }
+            
+            section {
+                padding-bottom: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
         }
     </style>
 </head>
-
 <body>
-    <div class="section">
-        <h1>Privacy Policy</h1>
-        <p>Last Updated: [2023.11.15]</p>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div>
+                    <h1>Privacy Policy</h1>
+                    <p>AbsoluteSecure Limited</p>
+                    <div class="last-updated">Last Updated: July 4, 2025</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quick Navigation -->
+    <div class="container">
+        <div class="quick-nav">
+            <h2>Quick Navigation</h2>
+            <div class="nav-links">
+                <button class="nav-btn" onclick="scrollToSection('scope')">Scope</button>
+                <button class="nav-btn" onclick="scrollToSection('collection')">Information Collection</button>
+                <button class="nav-btn" onclick="scrollToSection('choices')">Privacy Choices</button>
+                <button class="nav-btn" onclick="scrollToSection('sharing')">Information Sharing</button>
+                <button class="nav-btn" onclick="scrollToSection('children')">Children's Privacy</button>
+                <button class="nav-btn" onclick="scrollToSection('security')">Security</button>
+                <button class="nav-btn" onclick="scrollToSection('contact')">Contact Us</button>
+            </div>
+        </div>
     </div>
 
-    <div class="section">
-        <h2>Scope</h2>
-        <p>
-		This Privacy Policy ("Policy") governs the practices of AbsoluteSecure Limited ("AbsoluteSecure Limited," "we," "our," or "us") regarding the collection, use, disclosure, and handling of information, including personal and device information, in relation to all our products, software, services, and websites (collectively referred to as "Services"). By accessing and using our Services, you ("you" or "your") consent to the terms outlined in this Policy. 
+    <!-- Main Content -->
+    <main class="container">
+        <div class="content">
+            <!-- Scope -->
+            <section id="scope">
+                <h2>Scope</h2>
+                <p>This Privacy Policy ("Policy") governs the practices of AbsoluteSecure Limited ("AbsoluteSecure Limited," "we," "our," or "us") regarding the collection, use, disclosure, and handling of information, including personal and device information, in relation to all our products, software, services, and websites (collectively referred to as "Services"). By accessing and using our Services, you ("you" or "your") consent to the terms outlined in this Policy.</p>
+                
+                <h3>Our products include:</h3>
+                <div class="games-list">
+                    <span class="game-tag">Tile & Win - Fruit Fortune</span>
+                    <span class="game-tag">Ball Sort</span>
+                    <span class="game-tag">Black Hole Wars</span>
+                    <span class="game-tag">Sudoku CrossMath Block Solitaire</span>
+                    <span class="game-tag">Play Match-Brainrot Win</span>
+                    <span class="game-tag">Farm Tile Play to Win</span>
+                    <span class="game-tag">Bus & Win - Traffic Jam</span>
+                    <span class="game-tag">Bus Jam Cat - Play to Win</span>
+                    <span class="game-tag">Harbor Ferry: Traffic Jam</span>
+                    <span class="game-tag">Brainrot Match 3D</span>
+                    <span class="game-tag">Bus Play: Parking Jam</span>
+                    <span class="game-tag">More to come later</span>
+                </div>
+                
+                <p><strong>Developer Name:</strong> Long Live Games.</p>
+                
+                <p>Our Services are intended for individuals who can legally enter into binding contracts. If you are under the age of 13 or lack the legal capacity to enter into binding contracts, you must refrain from using our Services and providing any personal information. If you do not agree with this Policy, please do not access, sign up for, or use our Services.</p>
+                
+                <p>AbsoluteSecure Limited reserves the right to amend this Policy at any time. We encourage you to periodically review this section for updates and changes. Significant changes may be communicated to you via email or system messages.</p>
+            </section>
+            
+            <!-- Acceptance -->
+            <section>
+                <h2>Acceptance</h2>
+                <p>Please carefully read this Policy before using or accessing our Services. By accepting this Policy, you agree to the collection, storage, use, and disclosure of your information as outlined in the following sections. If you do not agree with any aspect of this Policy, please refrain from using our Services.</p>
+            </section>
+            
+            <!-- Information Collection and Methods -->
+            <section id="collection">
+                <h2>Information Collection and Methods</h2>
+                
+                <h3>Personal Information:</h3>
+                <p>Upon registering for a user account within any of our Services, we collect personal information that can identify you ("Personal Data," "data," or "information"). Personal Data may also be collected automatically or through third-party partners or services.</p>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-chart-line"></i> Firebase Analytics</h3>
+                    <p>Our games use Firebase Analytics to collect anonymous user data to improve game performance and user experience. This data includes, but is not limited to, device information, game events, app usage, and error reports. This information will be used to analyze and improve our games but will not be linked to your personally identifiable information.</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-ad"></i> AdMob Advertising Service</h3>
+                    <p>Our games may use AdMob Advertising Service to display advertisements. AdMob may collect information about your device and user behavior to provide relevant advertising. For more details on how AdMob handles your information, please refer to the AdMob Privacy Policy.</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-user-shield"></i> User Permissions</h3>
+                    <p>Our applications may request certain permissions from your device, such as access to storage, location data, or other device functionalities, to enhance the user experience. You will have the option to grant or deny these permissions when prompted.</p>
+                </div>
+            </section>
+            
+            <!-- Privacy Choices -->
+            <section id="choices">
+                <h2>Privacy Choices</h2>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <div>
+                        <h3>Refusal of Data Collection</h3>
+                        <p>You can choose to reject data collection in the game settings. However, please note that this may affect your gaming experience or cause certain features to be unavailable.</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-adjust"></i>
+                    </div>
+                    <div>
+                        <h3>Opt-out of Targeted Advertising</h3>
+                        <p>If you prefer not to receive personalized ads based on your usage, you can opt out through your device settings or through the game settings. Please be aware that opting out may not remove all advertisements, but they will be less relevant to your interests.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Information Sharing -->
+            <section id="sharing">
+                <h2>Information Sharing</h2>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-handshake"></i> Third-party Service Providers</h3>
+                    <p>We may share anonymous data with third-party service providers to improve game performance. These third-party service providers are subject to their own privacy policies.</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-bullhorn"></i> Advertising Partners</h3>
+                    <p>To provide a free or low-cost service, we work with advertising partners who may collect data such as device identifiers, IP addresses, and usage patterns to deliver targeted advertisements. We ensure that our partners comply with applicable privacy laws and regulations.</p>
+                </div>
+            </section>
+            
+            <!-- Children's Privacy -->
+            <section id="children">
+                <h2>Children's Privacy</h2>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-child"></i> Children's Privacy Protection</h3>
+                    <p>Our games are intended for a general audience and are not intended for children under the age of 13. If you believe that we may have collected personal information from a minor, please contact us and we will take steps to delete the information as quickly as possible.</p>
+                </div>
+            </section>
+            
+            <!-- Security -->
+            <section id="security">
+                <h2>Security</h2>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-lock"></i> Data Security</h3>
+                    <p>We take reasonable measures to protect the security of your data. However, please understand that there are certain risks in information transmission on the Internet, and 100% security cannot be guaranteed.</p>
+                </div>
+                
+                <h3>How and Why We Use Your Information</h3>
+                <p>We use your information for the following purposes:</p>
+                <ul>
+                    <li>Communication: To facilitate communication and interaction with you</li>
+                    <li>Service Functionality: To ensure the functionality and performance of our Services</li>
+                    <li>Service Enhancement: To enhance and improve our Services for a better user experience</li>
+                    <li>Business Development: For the development and growth of our business</li>
+                    <li>Protection Against Fraud and Spam: To identify and prevent misuse, such as spam and illegal content</li>
+                    <li>Advertising: To serve personalized advertisements using third-party advertising networks</li>
+                </ul>
+                
+                <p>We analyze your information to provide targeted advertisements. In regions such as the European Economic Area, Norway, or Switzerland, certain third-party networks may require your consent for personalized ads.</p>
+                
+                <p>We implement industry-standard security measures to safeguard against the loss, misuse, and alteration of information under our control. However, please note that no internet data transmission is completely secure. Thus, we cannot ensure or warrant the security of any data transmitted over the Service, and any transmission is at your own risk.</p>
+            </section>
+            
+            <!-- Transfers of Your Information -->
+            <section>
+                <h2>Transfers of Your Information</h2>
+                <p>By using the Service or providing us with your information, you acknowledge that your information may be transferred, processed, and stored on servers located outside your country or jurisdiction, including the United States. Such locations may have data protection laws less stringent than those in your residence jurisdiction. If you oppose the transfer, processing, or maintenance of your information outside your jurisdiction, refrain from using the Service.</p>
+            </section>
+            
+            <!-- Age Limits -->
+            <section>
+                <h2>Age Limits</h2>
+                <p>Our Services are not designed for users under the age of sixteen (16). We will not knowingly collect personal information directly from individuals under the age of sixteen (16) without parental consent. If you are under sixteen (16), do not share any information with us. We advise parents and guardians to supervise their children online and familiarize themselves with the websites their children visit. If you suspect we've inadvertently collected information from a child under sixteen (16), please contact us immediately at absolutesecurelimited@gmail.com.</p>
+            </section>
+            
+            <!-- Links to Other Websites and Third-Party Ads -->
+            <section>
+                <h2>Links to Other Websites and Third-Party Ads</h2>
+                <p>Our Services may include advertisements or hyperlinks to other websites, including those of business partners, vendors, and advertisers. These advertisements and third-party websites may employ cookies, web beacons, or other devices. We do not control these technologies or have access to the information they collect. We are not responsible for the content or privacy practices of third parties.</p>
+            </section>
+            
+            <!-- California Privacy Rights -->
+            <section>
+                <h2>California Privacy Rights</h2>
+                <p>The California Consumer Privacy Act ("CCPA") grants California residents additional rights. To exercise these rights, refer to the "Exercising Your California Privacy Rights" subsection below.</p>
+                
+                <h3>Exercising Your Rights</h3>
+                <p>To exercise your rights under California law, you may submit a verifiable request to us by either visiting our website or contacting us via email at absolutesecurelimited@gmail.com. Please include "California Privacy Rights" in the subject line and provide your name, contact information, and a description of the request. We may request additional information to verify your identity and prevent unauthorized access. Please note that California law allows us up to 45 days to respond to your request. In some cases, we may require an extension of up to 90 days. We will notify you if an extension is necessary, along with the reason for the delay.</p>
+                
+                <h3>Non-Discrimination</h3>
+                <p>We will not discriminate against you for exercising your California privacy rights. However, please be aware that if you exercise your right to delete or limit the use of certain information, it may affect your ability to use certain features of our Services.</p>
+            </section>
+            
+            <!-- Additional Terms -->
+            <section>
+                <h2>Additional Terms</h2>
+                <p>All cash withdrawals are for third-party services. Cheating is prohibited. We have the right to ban cheating accounts.</p>
+                <p>Value judgment is based on third-party evaluation. If there is a malicious complaint or bad review, we have the right to take back the reward. The rules are subject to the latest version, and we have the final right of interpretation.</p>
+                <p>All your information is stored safely by a third party. PayPal services are officially formulated.</p>
+            </section>
+            
+            <!-- Contact Us -->
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, concerns, or feedback about this Privacy Policy, please contact us at absolutesecurelimited@gmail.com. We value your privacy and are committed to addressing your inquiries.</p>
+            </section>
+            
+            <!-- Privacy Policy Update -->
+            <section>
+                <h2>Changes to this Privacy Policy</h2>
+                <p>AbsoluteSecure Limited reserves the right to update this Privacy Policy periodically. We encourage you to review this Policy regularly to stay informed about how we are protecting your information. Your continued use of our Services after changes have been posted constitutes your agreement to the updated Policy.</p>
+            </section>
+            
+            <!-- Conclusion -->
+            <section>
+                <h2>Conclusion</h2>
+                <p>We understand the importance of your privacy and are dedicated to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data. By using our Services, you agree to the practices described herein. Thank you for choosing AbsoluteSecure Limited. We look forward to providing you with high-quality products, software, services, and websites while ensuring your privacy is maintained.</p>
+                <p>This Privacy Policy was last updated on the date mentioned at the beginning of the document. If you have any concerns or questions regarding this Privacy Policy, please do not hesitate to contact us at absolutesecurelimited@gmail.com.</p>
+                <p style="margin-top: 20px; font-style: italic;">Sincerely,<br>The AbsoluteSecure Limited Team</p>
+            </section>
+        </div>
+    </main>
 
-Our products include: *Tile & Win - Fruit Fortune*, *Ball Sort*, *Black Hole Wars*, and *Sudoku CrossMath Block Solitaire*. Our Services are intended for individuals who can legally enter into binding contracts. If you are under the age of 13 or lack the legal capacity to enter into binding contracts, you must refrain from using our Services and providing any personal information. If you do not agree with this Policy, please do not access, sign up for, or use our Services. AbsoluteSecure Limited reserves the right to amend this Policy at any time. We encourage you to periodically review this section for updates and changes. Significant changes may be communicated to you via email or system messages.
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="contact-section">
+                <h2>Have any privacy concerns?</h2>
+                <p>Please contact our Privacy Officer</p>
+                <a href="mailto:absolutesecurelimited@gmail.com" class="contact-btn">
+                    <i class="fas fa-envelope"></i> absolutesecurelimited@gmail.com
+                </a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 AbsoluteSecure Limited. All rights reserved.</p>
+                <p>Developer: Long Live Games</p>
+            </div>
+        </div>
+    </footer>
 
-For inquiries related to privacy matters, please contact our Privacy Officer at the following email address: **absolutesecurelimited@gmail.com**.
-		</p>
-    </div>
-
-    <div class="section">
-        <h2>Acceptance</h2>
-        <p>
-		Please carefully read this Policy before using or accessing our Services. By accepting this Policy, you agree to the collection, storage, use, and disclosure of your information as outlined in the following sections. If you do not agree with any aspect of this Policy, please refrain from using our Services.
-		</p>
-    </div>
-
-    <div class="section">
-        <h2>Information Collection and Methods</h2>
-        <h3>Personal Information:</h3>
-        <p>Personal Information:
-Upon registering for a user account within any of our Services, we collect personal information that can identify you ("Personal Data," "data," or "information"). Personal Data may also be collected automatically or through third-party partners or services.
-
-1. Information Collection and Use
-1.1 **Firebase Analytics**: Our games use Firebase Analytics to collect anonymous user data to improve game performance and user experience. This data includes, but is not limited to, device information, game events, app usage, and error reports. This information will be used to analyze and improve our games but will not be linked to your personally identifiable information.
-
-   1.2 **AdMob Advertising Service**: Our games may use AdMob Advertising Service to display advertisements. AdMob may collect information about your device and user behavior to provide relevant advertising. For more details on how AdMob handles your information, please refer to the AdMob Privacy Policy.
-
-   1.3 **User Permissions**: Our applications may request certain permissions from your device, such as access to storage, location data, or other device functionalities, to enhance the user experience. You will have the option to grant or deny these permissions when prompted.
-
-2. Privacy Choices
-2.1 **Refusal of Data Collection**: You can choose to reject data collection in the game settings. However, please note that this may affect your gaming experience or cause certain features to be unavailable.
-
-   2.2 **Opt-out of Targeted Advertising**: If you prefer not to receive personalized ads based on your usage, you can opt out through your device settings or through the game settings. Please be aware that opting out may not remove all advertisements, but they will be less relevant to your interests.
-
-3. Information Sharing
-3.1 **Third-party Service Providers**: We may share anonymous data with third-party service providers to improve game performance. These third-party service providers are subject to their own privacy policies.
-
-   3.2 **Advertising Partners**: To provide a free or low-cost service, we work with advertising partners who may collect data such as device identifiers, IP addresses, and usage patterns to deliver targeted advertisements. We ensure that our partners comply with applicable privacy laws and regulations.
-
-4. Children’s Privacy
-4.1 **Children's Privacy Protection**: Our games are intended for a general audience and are not intended for children under the age of 13. If you believe that we may have collected personal information from a minor, please contact us and we will take steps to delete the information as quickly as possible.
-
-5. Security
-5.1 **Data Security**: We take reasonable measures to protect the security of your data. However, please understand that there are certain risks in information transmission on the Internet, and 100% security cannot be guaranteed.
-
-6. Privacy Policy Update
-6.1 Privacy Policy Changes: We may update this Privacy Policy from time to time to reflect changes in the law, improvements to our services, or other factors. The updated Privacy Policy will be notified to you prior to its effective date.</p>
-    </div>
-
-
-    <div class="section">
-        <h4>1. Account Information</h4>
-        <p>- We collect certain information directly from you, provided through means such as emails, online forms, embedded support features, or other inquiries.</p>
-
-        <h4>2. Device Information:</h4>
-        <p>- When you access our website or utilize our software, collected information includes IP addresses, location data, Device IDs, Advertiser IDs, browser settings, device type, operating system, and more.</p>
-
-        <h4>3. Activity and Usage Information:</h4>
-        <p>- During the use of our Services, we may automatically gather details about your interactions. This includes Internet Protocol ("IP") addresses, device identifiers, advertising identifiers, MAC addresses, operating systems, browser types, language preferences, page referrals, crash data, location data, purchasing activities, and other data tied to your Services engagement.</p>
-
-        <h4>4. Information from Third Parties</h4>
-        <p>- Our app integrates SDKs from analytical service providers for optimization purposes. These third-party SDKs might collect your information, such as Google Advertising ID on Android devices (GAID) or Identifier for Advertising on iOS devices (IDFA), region information, and IP addresses. These third-party partners are independent; their privacy policies are accessible on their respective websites.</p>
-
-        <h4>5. Information from Social Media Platforms</h4>
-        <p>- You can also opt to create an account using your Facebook or Google credentials. When you use these credentials to log in, you authorize Facebook or Google to share personal information like your name, profile picture, email address, and other listed details.</p>
-
-        <h4>6. How and Why We Use Your Information</h4>
-        <p>
-		We use your information for the following purposes:
-1. Communication: To facilitate communication and interaction with you.
-2. Service Functionality: To ensure the functionality and performance of our Services.
-3. Service Enhancement: To enhance and improve our Services for a better user experience.
-4. Business Development: For the development and growth of our business.
-5. Protection Against Fraud and Spam: To identify and prevent misuse, such as spam and illegal content.
-6. Advertising: To serve personalized advertisements using third-party advertising networks. We analyze your information to provide targeted advertisements. In regions such as the European Economic Area, Norway, or Switzerland, certain third-party networks may require your consent for personalized ads.</p>
-    </div>
-	
-	    <div class="section">
-        <h4>Security</h4>
-        <p>We implement industry-standard security measures to safeguard against the loss, misuse, and alteration of information under our control. However, please note that no internet data transmission is completely secure. Thus, we cannot ensure or warrant the security of any data transmitted over the Service, and any transmission is at your own risk.</p>
-    
-	        <h4>Transfers of Your Information</h4>
-        <p>By using the Service or providing us with your information, you acknowledge that your information may be transferred, processed, and stored on servers located outside your country or jurisdiction, including the United States. Such locations may have data protection laws less stringent than those in your residence jurisdiction. If you oppose the transfer, processing, or maintenance of your information outside your jurisdiction, refrain from using the Service.</p>
-    
-	        <h4>Age Limits</h4>
-        <p>Our Services are not designed for users under the age of sixteen (16). We will not knowingly collect personal information directly from individuals under the age of sixteen (16) without parental consent. If you are under sixteen (16), do not share any information with us. We advise parents and guardians to supervise their children online and familiarize themselves with the websites their children visit. If you suspect we've inadvertently collected information from a child under sixteen (16), please contact us immediately at absolutesecurelimited@gmail.com.</p>
-    
-	        <h4>Links to Other Websites and Third-Party Ads</h4>
-        <p>Our Services may include advertisements or hyperlinks to other websites, including those of business partners, vendors, and advertisers. These advertisements and third-party websites may employ cookies, web beacons, or other devices. We do not control these technologies or have access to the information they collect. We are not responsible for the content or privacy practices of third parties.</p>
-    
-	        <h4>California Privacy Rights</h4>
-        <p>The California Consumer Privacy Act ("CCPA") grants California residents additional rights. To exercise these rights, refer to the "Exercising Your California Privacy Rights" subsection below.</p>
-    
-	        <h4>Social Sharing Features</h4>
-        <p>You have the right to know and access the personal information we've collected about you over the past twelve months. This includes:<br>
-		- The categories of information collected about you.<br>
-- The sources from which information is collected.<br>
-- The business purpose for collecting your information.<br>
-- The third parties with whom we share your information.<br>
-- The specific pieces of information collected about you.
-		</p>
-    
-	        <h4>Right to Delete</h4>
-        <p>You can request the deletion of your collected information (and instruct our service providers to do the same). Certain exceptions apply, such as when the information is required for purposes like providing a service, performing a contract, protecting security, complying with legal obligations, and more.</p>
-    
-	        <h4>Choice</h4>
-        <p>As per Privacy Shield Principles, you have the right to opt-out of disclosures of your personal information to third parties and uses of your personal information that differ significantly from the original purpose(s) for collection.</p>
-    
-	
-		        <h4>Access</h4>
-        <p>We provide the right to access your personal information upon request, free of charge, except when a fee is allowed by law. Some access may be restricted if it affects the rights of others.</p>
-    
-		        <h4>Right to Rectification (Correction)</h4>
-        <p>You may request corrections to your personal information in our records.</p>
-    
-		        <h4>Right to Erasure (Right to Be Forgotten)</h4>
-        <p>Upon request, we will delete your personal information from our records, subject to certain exceptions as provided by applicable laws.</p>
-    
-		        <h4>Exercising Your Rights</h4>
-        <p>To exercise your rights under California law, you may submit a verifiable request to us by either visiting our website or contacting us via email at absolutesecurelimited@gmail.com. Please include "California Privacy Rights" in the subject line and provide your name, contact information, and a description of the request. We may request additional information to verify your identity and prevent unauthorized access. Please note that California law allows us up to 45 days to respond to your request. In some cases, we may require an extension of up to 90 days. We will notify you if an extension is necessary, along with the reason for the delay..</p>
-    
-			        <h4>Non-Discrimination</h4>
-        <p>We will not discriminate against you for exercising your California privacy rights. However, please be aware that if you exercise your right to delete or limit the use of certain information, it may affect your ability to use certain features of our Services.</p>
-		
-				        <h4>Contact Us</h4>
-        <p>If you have any questions, concerns, or feedback about this Privacy Policy, please contact us at absolutesecurelimited@gmail.com. We value your privacy and are committed to addressing your inquiries.</p>
-		
-				        <h4>Changes to this Privacy Policy</h4>
-        <p>AbsoluteSecure Limited reserves the right to update this Privacy Policy periodically. We encourage you to review this Policy regularly to stay informed about how we are protecting your information. Your continued use of our Services after changes have been posted constitutes your agreement to the updated Policy.</p>
-		
-				        <h4>Conclusion</h4>
-        <p>We understand the importance of your privacy and are dedicated to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data. By using our Services, you agree to the practices described herein. Thank you for choosing AbsoluteSecure Limited. We look forward to providing you with high-quality products, software, services, and websites while ensuring your privacy is maintained.
-This Privacy Policy was last updated on the date mentioned at the beginning of the document. If you have any concerns or questions regarding this Privacy Policy, please do not hesitate to contact us at absolutesecurelimited@gmail.com.
-Sincerely,
-The AbsoluteSecure Limited Team</p>
-	</div>
-    <!-- Continue adding sections as needed -->
-
+    <script>
+        // Smooth scroll to sections
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                window.scrollTo({
+                    top: element.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        // Highlight current section on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-btn');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - 150)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('onclick').includes(current)) {
+                        link.classList.add('active');
+                        link.style.background = 'var(--secondary)';
+                        link.style.color = 'white';
+                    } else {
+                        link.style.background = '';
+                        link.style.color = '';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>

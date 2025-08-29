@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurePlay Limited - Terms of Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b6b, #ffd166, #06d6a0, #118ab2, #073b4c);
+        }
+        
+        .logo {
+            font-size: 2.8rem;
+            color: #2a5298;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            color: #1e3c72;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+        
+        .terms-container {
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .terms-container::before {
+            content: 'TERMS OF SERVICE';
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: rgba(30, 60, 114, 0.07);
+            transform: rotate(10deg);
+            z-index: 0;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            color: #1e3c72;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e0e7ff;
+        }
+        
+        .section-title i {
+            margin-right: 10px;
+            background: #2a5298;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .clause {
+            margin-bottom: 20px;
+            padding-left: 46px;
+        }
+        
+        .clause-num {
+            font-weight: bold;
+            color: #2a5298;
+        }
+        
+        .clause-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1e3c72;
+        }
+        
+        .clause-content {
+            color: #444;
+            font-size: 1.05rem;
+        }
+        
+        .highlight {
+            background: #e0e7ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 4px solid #2a5298;
+        }
+        
+        .highlight p {
+            font-style: italic;
+            color: #1e3c72;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        
+        .acceptance {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .accept-btn {
+            background: linear-gradient(to right, #06d6a0, #118ab2);
+            color: white;
+            border: none;
+            padding: 14px 35px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .accept-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+        
+        .decline-btn {
+            background: transparent;
+            color: #ff6b6b;
+            border: 2px solid #ff6b6b;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .decline-btn:hover {
+            background: rgba(255, 107, 107, 0.1);
+        }
+        
+        footer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .company-name {
+            font-weight: bold;
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .terms-container {
+                padding: 25px 20px;
+            }
+            
+            .clause {
+                padding-left: 0;
+            }
+            
+            .section-title {
+                font-size: 1.2rem;
+            }
+            
+            .acceptance {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+            </div>
+            <h1>SurePlay Limited</h1>
+            <p class="subtitle">Terms of Service Agreement</p>
+            <p>Last Updated: August 4, 2025</p>
+        </header>
+        
+        <div class="terms-container">
+            <div class="highlight">
+                <p>By accessing or using our game, you signify your agreement to comply with the following terms and conditions.</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-key"></i>
+                    <h2>1. License to Use</h2>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">1.1</span> Non-Commercial Use</div>
+                    <p class="clause-content">You are granted a license to use this game for non-commercial and personal purposes. You may not use any part of this game for commercial purposes, adaptation, distribution, or sale.</p>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">1.2</span> Security</div>
+                    <p class="clause-content">You must not attempt to bypass, modify, crack, or interfere with the security features of the game, or disrupt any systems or networks associated with the game.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-user"></i>
+                    <h2>2. Age Requirement</h2>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">2.1</span> Legal Age</div>
+                    <p class="clause-content">You must be of legal age to use this game. If you are below the legal age, please use this game under the supervision of a legal guardian.</p>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">2.2</span> Guardian Responsibility</div>
+                    <p class="clause-content">If you are a legal guardian, you are responsible for overseeing your underage children's use of this game and ensuring their compliance with these terms.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-user-circle"></i>
+                    <h2>3. Account</h2>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">3.1</span> Account Security</div>
+                    <p class="clause-content">You may need to create a game account. You are responsible for keeping your account information confidential and for the security of your account and password.</p>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">3.2</span> Account Sharing</div>
+                    <p class="clause-content">You must not share your account information with others or use someone else's account. You should promptly notify us if you discover unauthorized use of your account.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-users"></i>
+                    <h2>4. User Conduct</h2>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">4.1</span> Respectful Behavior</div>
+                    <p class="clause-content">Your behavior in the game should be respectful of other players. You must not post, transmit, or share any illegal, offensive, obscene, threatening, or objectionable content.</p>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">4.2</span> Fair Play</div>
+                    <p class="clause-content">You must not use any cheats, hacks, or methods that disrupt the balance of the game to gain unfair advantages.</p>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">4.3</span> Server Integrity</div>
+                    <p class="clause-content">You must not interfere with the game servers or networks related to the game.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h2>5. Payments and Virtual Goods</h2>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">5.1</span> Payment Policy</div>
+                    <p class="clause-content">Purchasing virtual goods in the game may require payment. All payments are final and non-refundable unless required by law.</p>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">5.2</span> Virtual Goods Usage</div>
+                    <p class="clause-content">Purchased virtual goods are not for commercial use and should not be traded outside the game.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h2>6. Disclaimer of Warranty</h2>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">6.1</span> "As Is" Basis</div>
+                    <p class="clause-content">This game is provided "as is" without any express or implied warranties, including but not limited to merchantability or fitness for a particular purpose.</p>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">6.2</span> Limitation of Liability</div>
+                    <p class="clause-content">We are not responsible for your actions or statements in the game, nor are we responsible for the actions or statements of other players.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-copyright"></i>
+                    <h2>7. Rights Reserved</h2>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">7.1</span> Modification Rights</div>
+                    <p class="clause-content">SurePlay Limited reserves the right to modify, suspend, interrupt, or terminate the game at any time without prior notice.</p>
+                </div>
+                <div class="clause">
+                    <div class="clause-title"><span class="clause-num">7.2</span> Intellectual Property</div>
+                    <p class="clause-content">All intellectual property rights related to the game belong to SurePlay Limited. You may not use, copy, or distribute any content related to the game without permission.</p>
+                </div>
+            </div>
+            
+            <div class="highlight">
+                <p>By using this game, you agree to be bound by the above terms. If you do not agree with these terms, please stop using the game immediately.</p>
+            </div>
+            
+  
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 <span class="company-name">SurePlay Limited</span>. All rights reserved.</p>
+            <p>Contact us: support@sureplay.com</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation to section titles on scroll
+            const sections = document.querySelectorAll('.section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'all 0.6s ease';
+                observer.observe(section);
+            });
+            
+            // Button interactions
+            const acceptBtn = document.querySelector('.accept-btn');
+            const declineBtn = document.querySelector('.decline-btn');
+            
+            acceptBtn.addEventListener('click', function() {
+                this.innerHTML = '<i class="fas fa-check-circle"></i> Terms Accepted!';
+                this.style.background = 'linear-gradient(to right, #06d6a0, #118ab2)';
+                alert('Thank you for accepting our Terms of Service. Enjoy the game!');
+            });
+            
+            declineBtn.addEventListener('click', function() {
+                alert('You must accept the Terms of Service to use our games.');
+            });
+        });
+    </script>
+</body>
+</html>
